@@ -1,12 +1,131 @@
-# React + Vite
+# Temple Management System - Pilgrim App Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🏛️ Overview
 
-Currently, two official plugins are available:
+This is a frontend prototype for a comprehensive Temple Management System, specifically designed for the Dwarkadhish Temple. The prototype demonstrates the user interface and experience for pilgrims, showcasing key features to manage overcrowding, enhance safety, and improve the overall temple visit experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 [Live Demo](https://9MidhunPM.github.io/SIH/SIH)
 
-## Expanding the ESLint configuration
+![Temple Management App](public/temple.jpeg)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎯 Features Demonstrated
+
+### 📱 Current Implementation
+- **Real-time Crowd Density Visualization**
+  - Interactive graph showing hourly crowd levels
+  - Visual representation of peak and low-crowd times
+
+- **Emergency Response System**
+  - Prominent SOS button for immediate assistance
+  - Quick access to emergency services
+
+- **Queue Management Interface**
+  - Slot booking system UI
+  - Visual representation of waiting times
+
+- **Navigation & Information**
+  - Mobile-optimized interface
+  - Easy access to key temple information
+  - Intuitive bottom navigation
+
+### 🚀 Planned Features
+
+#### 1. Overcrowding & Queue Management
+- Virtual queue booking system
+- Real-time wait time updates
+- Entry/exit flow tracking
+- Bottleneck detection and alerts
+
+#### 2. Safety & Emergency Response
+- Automated panic/emergency detection
+- Staff alert system integration
+- First aid center locations
+- Area-specific SOS notifications
+
+#### 3. Traffic & Mobility
+- Parking availability system
+- Shuttle/bus tracking
+- Smart route suggestions
+- Time-based entry recommendations
+
+#### 4. Pilgrim Guidance
+- Multilingual support (Gujarati, Hindi, English)
+- Push notification system
+- Interactive digital maps
+- Comprehensive FAQ section
+
+#### 5. Resource Optimization
+- AI-powered crowd prediction
+- Staff allocation system
+- Real-time heatmap visualization
+
+#### 6. Accessibility Features
+- Priority booking system
+- Assistance request system
+- Voice navigation
+
+## 🛠️ Technical Stack
+
+- **Frontend Framework:** React
+- **Routing:** React Router v7
+- **Styling:** CSS3 with Mobile-First Design
+- **Charts:** Chart.js with React-Chartjs-2
+- **Build Tool:** Vite
+- **Deployment:** GitHub Pages
+
+## 📋 Prerequisites
+
+- Node.js (v20 or higher)
+- npm (v10 or higher)
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/9MidhunPM/SIH.git
+   ```
+
+2. Install dependencies:
+   ```bash
+   cd SIH
+   npm install
+   ```
+
+3. Run development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Build for production:
+   ```bash
+   npm run build
+   ```
+
+## 📱 Mobile-First Design
+
+The application is designed with a mobile-first approach, optimized for:
+- Screen width: 375px (standard mobile view)
+- Responsive components
+- Touch-friendly interface
+- Smooth scrolling experience
+
+## 🔜 Future Scope
+
+This frontend prototype serves as a foundation for:
+1. Backend integration for real-time data
+2. Admin dashboard development
+3. Full feature implementation
+4. Multi-language support
+5. Real-time analytics integration
+
+## 📄 License
+
+MIT License - feel free to use this code for your own projects!
+
+## 🤝 Contributing
+
+This is a prototype for demonstration purposes. For real implementation or contributions, please reach out to the development team.
+
+---
+
+⚠️ **Note:** This is currently a frontend prototype meant for demonstration purposes. The buttons and features are presentational and do not have backend functionality.
