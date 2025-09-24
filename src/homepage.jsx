@@ -35,9 +35,12 @@ function HomePage() {
     scales: { y: { beginAtZero: true, ticks: { stepSize: 20 } } },
   };
 
+  // Get the base URL from Vite
+  const baseUrl = import.meta.env.BASE_URL;
+  
   return (
     <div className="content">
-      <img src="temple.jpeg" alt="Temple" className="temple-img" />
+      <img src={baseUrl + "temple.jpeg"} alt="Temple" className="temple-img" />
 
       <button className="book-btn">Book Slot</button>
 
