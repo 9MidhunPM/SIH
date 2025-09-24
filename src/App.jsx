@@ -6,6 +6,8 @@ import ProfilePage from "./ProfilePage.jsx";
 import MenuPage from "./MenuPage.jsx";
 
 function App() {
+  // Get the base URL from the Vite environment
+  const baseUrl = import.meta.env.BASE_URL;
   return (
     <div className="app">
       {/* Top bar */}
@@ -16,10 +18,10 @@ function App() {
 
       {/* Routes */}
       <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/features" element={<FeaturePage />} />
-        <Route path="/profile" element={<ProfilePage />} />
-        <Route path="/menu" element={<MenuPage />} />
+        <Route path={baseUrl} element={<Homepage />} />
+        <Route path={baseUrl + "features"} element={<FeaturePage />} />
+        <Route path={baseUrl + "profile"} element={<ProfilePage />} />
+        <Route path={baseUrl + "menu"} element={<MenuPage />} />
       </Routes>
 
       {/* SOS Button */}
@@ -32,10 +34,10 @@ function App() {
 
       {/* Bottom nav */}
       <div className="bottom-nav">
-        <Link to="/">🏠</Link>
-        <Link to="/features">📍</Link>
-        <Link to="/profile">👤</Link>
-        <Link to="/menu">☰</Link>
+        <Link to={baseUrl}>🏠</Link>
+        <Link to={baseUrl + "features"}>📍</Link>
+        <Link to={baseUrl + "profile"}>👤</Link>
+        <Link to={baseUrl + "menu"}>☰</Link>
       </div>
     </div>
   );
